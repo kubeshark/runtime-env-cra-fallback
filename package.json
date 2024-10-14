@@ -1,17 +1,17 @@
 {
-  "name": "runtime-env-cra",
+  "name": "runtime-env-cra-fallback",
   "version": "0.2.4",
-  "description": "A runtime environment handler for create-react-apps",
+  "description": "A runtime environment handler for create-react-apps with fallbacks",
   "main": "lib/index.js",
   "bin": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:kHRISl33t/runtime-env-cra.git"
+    "url": "git@github.com:tiptophelmet/runtime-env-cra-fallbacks.git"
   },
   "bugs": {
-    "url": "https://github.com/kHRISl33t/runtime-env-cra/issues"
+    "url": "https://github.com/tiptophelmet/runtime-env-cra-fallbacks/issues"
   },
-  "homepage": "https://github.com/kHRISl33t/runtime-env-cra",
+  "homepage": "https://github.com/tiptophelmet/runtime-env-cra-fallbacks",
   "scripts": {
     "test": "jest --coverage --silent --config jest.config.js",
     "test:watch": "jest --watch",
@@ -30,7 +30,7 @@
     "env",
     "handling"
   ],
-  "author": "Kristof Ivancza (github.com/kHRISl33t)",
+  "author": "Serhii P. (github.com/tiptophelmet)",
   "license": "ISC",
   "dependencies": {
     "yargs": "^17.1.1"
