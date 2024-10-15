@@ -1,4 +1,4 @@
-# Runtime-env-cra
+# Runtime-env-cra-fallback
 
 A runtime environment handler for React.js apps that have been bootstraped using [create-react-app](https://github.com/facebook/create-react-app).
 
@@ -13,14 +13,14 @@ A runtime environment handler for React.js apps that have been bootstraped using
 
 ## Usage
 
-The `runtime-env-cra` package was meant to be used in Docker or VM based environments, where you have full control over how your application will start. Sadly, `runtime-env-cra` can not be used if you are using S3 or another static file serving solution.
+The `runtime-env-cra-fallback` package was meant to be used in Docker or VM based environments, where you have full control over how your application will start. Sadly, `runtime-env-cra` can not be used if you are using S3 or another static file serving solution.
 
 - Supported node.js versions due to `yargs` is 12 or greater
 
 - Installation
 
 ```sh
-$ npm install runtime-env-cra
+$ npm install runtime-env-cra-fallback
 ```
 
 - Add the following to `public/index.html` inside the `<head>` tag:
@@ -35,7 +35,7 @@ $ npm install runtime-env-cra
 ```json
 ...
 "scripts": {
-  "start": "NODE_ENV=development runtime-env-cra --config-name=./public/runtime-env.js && react-scripts start",
+  "start": "NODE_ENV=development runtime-env-cra-fallback --config-name=./public/runtime-env.js && react-scripts start",
   ...
 }
 ...
@@ -45,7 +45,7 @@ $ npm install runtime-env-cra
 
 ```json
 "scripts": {
-  "start": "cross-env NODE_ENV=development runtime-env-cra --config-name=./public/runtime-env.js && react-scripts start",
+  "start": "cross-env NODE_ENV=development runtime-env-cra-fallback --config-name=./public/runtime-env.js && react-scripts start",
   ...
 }
 ```
@@ -62,19 +62,19 @@ This script uses your `.env` file by default to parse the environment variables 
 - Display the help section.
 
 ```sh
-$ runtime-env-cra --help | -h
+$ runtime-env-cra-fallback --help | -h
 ```
 
 - Relative path and file name that will be generated. Default is `./runtime-env.js`
 
 ```sh
-$ runtime-env-cra --config-name | -cn
+$ runtime-env-cra-fallback --config-name | -cn
 ```
 
 - Relative path and name of your `env` file. Default is `./.env`
 
 ```sh
-$ runtime-env-cra --env-file | -ef
+$ runtime-env-cra-fallback --env-file | -ef
 ```
 
 ## Typescript usage
@@ -122,7 +122,7 @@ RUN apk add --update npm
 RUN npm i -g runtime-env-cra
 
 # start the app with the following CMD
-CMD ["/bin/sh", "-c", "runtime-env-cra && nginx -g \"daemon off;\""]
+CMD ["/bin/sh", "-c", "runtime-env-cra-fallback && nginx -g \"daemon off;\""]
 ```
 
 ## Examples
