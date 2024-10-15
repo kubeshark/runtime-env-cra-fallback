@@ -6,12 +6,12 @@
   "bin": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:tiptophelmet/runtime-env-cra-fallbacks.git"
+    "url": "git@github.com:tiptophelmet/runtime-env-cra-fallback.git"
   },
   "bugs": {
-    "url": "https://github.com/tiptophelmet/runtime-env-cra-fallbacks/issues"
+    "url": "https://github.com/tiptophelmet/runtime-env-cra-fallback/issues"
   },
-  "homepage": "https://github.com/tiptophelmet/runtime-env-cra-fallbacks",
+  "homepage": "https://github.com/tiptophelmet/runtime-env-cra-fallback",
   "scripts": {
     "test": "jest --coverage --silent --config jest.config.js",
     "test:watch": "jest --watch",
