@@ -1,6 +1,6 @@
 {
   "name": "runtime-env-cra-fallback",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A runtime environment handler for create-react-apps with fallbacks",
   "main": "lib/index.js",
   "bin": "lib/index.js",
