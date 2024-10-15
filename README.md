@@ -1,5 +1,7 @@
 # Runtime-env-cra-fallback
 
+`runtime-env-cra-fallback` allows falling back to `.env` values in case environment key cannot be found in `process.env`
+
 A runtime environment handler for React.js apps that have been bootstraped using [create-react-app](https://github.com/facebook/create-react-app).
 
 - [Usage](#usage)
@@ -13,7 +15,7 @@ A runtime environment handler for React.js apps that have been bootstraped using
 
 ## Usage
 
-The `runtime-env-cra-fallback` package was meant to be used in Docker or VM based environments, where you have full control over how your application will start. Sadly, `runtime-env-cra` can not be used if you are using S3 or another static file serving solution.
+The `runtime-env-cra-fallback` package was meant to be used in Docker or VM based environments, where you have full control over how your application will start. Sadly, `runtime-env-cra-fallback` can not be used if you are using S3 or another static file serving solution.
 
 - Supported node.js versions due to `yargs` is 12 or greater
 
